@@ -5,6 +5,6 @@ type Customer struct {
 	Age  int
 }
 
-func Demo() {
+func (customer *Customer) CustomerInfo() {
 
 }
