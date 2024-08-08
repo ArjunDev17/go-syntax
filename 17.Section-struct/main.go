@@ -16,10 +16,12 @@ func main() {
 	// 	first: "Ram",
 	// 	last:  "Ji",
 	// }
+
 	// // p2 := Name{
 	// // 	first: "Sheeta",
 	// // 	last:  "Ji",
 	// // }
+
 	// fmt.Printf("%T \t %#v\n", p1, p1)
 	embededStruct()
 	fmt.Println("----------------------------------")
