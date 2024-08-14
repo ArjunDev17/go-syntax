@@ -23,16 +23,16 @@ func logInfo(s fmt.Stringer) {
 	log.Print("Log from local/ :", s.String())
 }
 func main() {
-	b := Book{
+	book := Book{
 		name: "The Ramayan",
 	}
 	var c count = 12
-	fmt.Print(b)
+	fmt.Print(book)
 	fmt.Print(c)
 	fmt.Println("------------------------------")
-	log.Print(b)
+	log.Print(book)
 	log.Print(c)
 	fmt.Println("------------------------------")
-	logInfo(b)
+	logInfo(book)
 	logInfo(c)
 }

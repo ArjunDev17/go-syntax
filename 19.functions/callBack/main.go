@@ -5,8 +5,10 @@ import "fmt"
 func main() {
 	x := doMath(2, 3, add)
 	fmt.Println("x :", x)
+
 	y := doMath(10, 2, sub)
 	fmt.Println("y:", y)
+	
 	fmt.Println("-----------------------")
 	f := increment()
 	fmt.Println(" f:", f())
