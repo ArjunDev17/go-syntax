@@ -1,0 +1,9 @@
+mode: set
+test-branch/mystr/main.go:5.30,7.27 2 1
+test-branch/mystr/main.go:11.2,11.10 1 1
+test-branch/mystr/main.go:7.27,10.3 2 1
+test-branch/mystr/main.go:13.31,15.2 1 1
+test-branch/mystr/main.go:16.31,18.23 2 0
+test-branch/mystr/main.go:24.2,24.20 1 0
+test-branch/mystr/main.go:18.23,20.20 2 0
+test-branch/mystr/main.go:20.20,22.4 1 0
