@@ -14,9 +14,9 @@ import (
 )
 
 func main() {
-	// nums := []int{1, 4, 2, 0, 7, 4, 3, 0, 1, 1}
-	// moveZeroToRight(nums)
-	// fmt.Println(nums)
+	nums := []int{1, 4, 2, 0, 7, 4, 3, 0, 1, 1}
+	moveZeroToRight(nums)
+	fmt.Println(nums)
 	for i := 0; i < 0; i++ {
 		go printHell()
 	}
@@ -34,9 +34,15 @@ func moveZeroToRight(nums []int) {
 	nonZeroIndex := 0
 
 	for i := 0; i < n; i++ {
-		if nums[i] != 0 {
+		if nums[i] == 0 {
 			nums[nonZeroIndex], nums[i] = nums[i], nums[nonZeroIndex]
+			//.   {1, 4, 2, 0, 7, 4, 3, 0, 1, 1}
 			nonZeroIndex++
 		}
 	}
 }
+
+/*
+str:="jjksdf.nkhiusad."
+
+*/
