@@ -1,0 +1,9 @@
+Concurrency :
+        it is about multiple things happening at same time in randome order .
+
+        Go provides built in support for concurrency.
+Why we need to think about concurency ?
+check example :
+
+Concurrency :
+it is composition of independent execution computations which may or may not run in parallel
