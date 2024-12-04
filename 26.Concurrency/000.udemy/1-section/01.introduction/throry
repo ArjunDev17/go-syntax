@@ -1,0 +1,25 @@
+Concurrency :
+        it is about multiple things happening at same time in randome order .
+
+        Go provides built in support for concurrency.
+Why we need to think about concurency ?
+in order to run faster application needs to be devided into multipe independet units and run them in parallel
+
+check example :
+
+Concurrency :
+it is composition of independent execution computations which may or may not run in parallel
+
+Parallsim
+parallism is ability to execute multiple computations simultaeously
+                multiple core processor
+                core 1---->UI Process
+                core 2---->Redering Process
+                core 3---->Network Process
+                core 4---->Strong Process
+        Concurrency enable parallism
+
+
+What is a Process ?
+        an instance of running program is called a process .
+        process provide environment for program to execute
