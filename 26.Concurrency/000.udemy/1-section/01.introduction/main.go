@@ -27,7 +27,7 @@ import (
 )
 
 // Add - Sequential code to add numbers
-func Add(numbers []int64) int64 {
+func Add(numbers []int64) int64 { //		{2,3,4,5,6,7}
 	var sum int64
 	for _, number := range numbers {
 		sum += number

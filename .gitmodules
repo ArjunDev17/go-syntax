@@ -1,0 +1,3 @@
+[submodule "go_lang_basic"]
+	path = go_lang_basic
+	url = git@github.com:ArjunDev17/go_lang_basic.git
