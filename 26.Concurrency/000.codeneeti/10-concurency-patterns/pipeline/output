@@ -1,0 +1,31 @@
+arjun@arjun-Vostro-3480:pipeline$ touch main.go
+arjun@arjun-Vostro-3480:pipeline$ go run main.go
+squared data is : 1
+squared data is : 4
+squared data is : 9
+squared data is : 16
+arjun@arjun-Vostro-3480:pipeline$ go run main.go
+squared data is : 1
+squared data is : 4
+squared data is : 9
+squared data is : 16
+squared data is 2: 1
+squared data is 2: 2
+squared data is 2: 3
+arjun@arjun-Vostro-3480:pipeline$ go run main.go
+squared data is : 1
+squared data is : 4
+squared data is : 9
+squared data is : 16
+squared data is 2: 1
+squared data is 2: 4
+squared data is 2: 9
+arjun@arjun-Vostro-3480:pipeline$ go run main.go
+squared data is : 1
+squared data is : 4
+squared data is : 9
+squared data is : 16
+squared data is 2: 1
+squared data is 2: 16
+squared data is 2: 81
+arjun@arjun-Vostro-3480:pipeline$ 

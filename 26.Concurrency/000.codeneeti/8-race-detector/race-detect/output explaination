@@ -1,0 +1,65 @@
+arjun@arjun-Vostro-3480:7-sync-package$ cd race-detect/
+arjun@arjun-Vostro-3480:race-detect$ go run main.go
+948.03848ms
+1.030350903s
+1.697306066s
+1.932759334s
+2.220308039s
+2.770054754s
+3.403460238s
+3.736307402s
+3.91975516s
+4.400341158s
+5.161297479s
+arjun@arjun-Vostro-3480:race-detect$ go run main.go
+948.060375ms
+1.030334015s
+1.69707147s
+1.932454797s
+2.220057099s
+2.769866813s
+3.403490191s
+3.736334834s
+3.919712534s
+4.400345851s
+arjun@arjun-Vostro-3480:race-detect$ go build -race main.go
+arjun@arjun-Vostro-3480:race-detect$ ./main
+949.395737ms
+==================
+WARNING: DATA RACE
+Read at 0x00c000130018 by goroutine 8:
+  main.main.func1()
+      /media/arjun/863684ab-ea66-44f7-9b95-f624c9361dea1/GoLang/00.go-syntax/26.Concurrency/000.codeneeti/7-sync-package/race-detect/main.go:35 +0xd3
+
+Previous write at 0x00c000130018 by main goroutine:
+  main.main()
+      /media/arjun/863684ab-ea66-44f7-9b95-f624c9361dea1/GoLang/00.go-syntax/26.Concurrency/000.codeneeti/7-sync-package/race-detect/main.go:33 +0x158
+
+Goroutine 8 (running) created at:
+  time.goFunc()
+      /usr/lib/go-1.18/src/time/sleep.go:176 +0x47
+==================
+1.036530986s
+1.703752664s
+1.939964263s
+2.227808804s
+2.777779824s
+3.411938476s
+3.744866609s
+3.928868294s
+4.409751874s
+Found 1 data race(s)
+arjun@arjun-Vostro-3480:race-detect$ go build -race main.go
+arjun@arjun-Vostro-3480:race-detect$ ./main
+949.575772ms
+1.033726299s
+1.700949328s
+1.93682526s
+2.22478341s
+2.77501688s
+3.409178071s
+3.742175533s
+3.9260248s
+4.407059003s
+5.168528969s
+arjun@arjun-Vostro-3480:race-detect$ 
