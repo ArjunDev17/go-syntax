@@ -5,6 +5,7 @@ import (
 	"runtime"
 	"sync"
 	"sync/atomic"
+	// "sync/atomic"
 )
 
 func main() {
@@ -17,6 +18,7 @@ func main() {
 			defer wg.Done()
 			for i := 0; i < 1000; i++ {
 				atomic.AddUint32(&count, 1)
+				// count++
 
 			}
 		}()
