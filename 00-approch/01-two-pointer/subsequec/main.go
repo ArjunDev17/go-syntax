@@ -19,6 +19,9 @@ func isSubsequence(s string, t string) bool {
 	return false
 }
 func main() {
+	nums := []int{1, 2, 3, 4}
+	n := len(nums) - 1
+	fmt.Println(" length :", n)
 	s := "abc"
 	t := "ahabgdc"
 	res := isSubsequence(s, t)
