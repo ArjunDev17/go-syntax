@@ -1,0 +1,7 @@
+push()-->to insert a element into stack
+pop()-->remove an element from the stack
+top()-->return the top element from stack
+isFull-->check stack is isFull or not
+isEmpaty()-->under flow stack
+
+-------------------------------------->
