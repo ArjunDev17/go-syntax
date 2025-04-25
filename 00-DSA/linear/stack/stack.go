@@ -18,8 +18,10 @@ loop:
 			fmt.Scanf("%d", &data)
 			push(&stack, data)
 		case 2:
-			fmt.Println("please chose pop options")
+			fmt.Println("remove element from top")
 			pop(&stack)
+		case 6:
+			top(&stack)
 		case 3:
 			fmt.Println("please chose delete options")
 			delete(&stack)
@@ -32,6 +34,14 @@ loop:
 		default:
 		}
 	}
+}
+
+//1 2 3 4 5
+
+func top(stack *[]int) {
+	top := (*stack)[len(*stack)-1]
+	fmt.Println("top:", top)
+
 }
 func push(stack *[]int, data int) {
 	*stack = append(*stack, data)
