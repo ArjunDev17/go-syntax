@@ -23,6 +23,21 @@ func (g *Graph) Print() {
 		fmt.Printf("%s -> %v\n", node, edges)
 	}
 }
+func (g *Graph) AddEdge1(from, to string) {
+	g.vertices[from] = append(g.vertices[from], to)
+	g.vertices[to] = append(g.vertices[to], from)
+}
+func (g *Graph) DFS(start string, visited map[string]bool) {
+	if visited[start] {
+		return
+	}
+	visited[start] = true
+	fmt.Println(start)
+
+	for _, neighbor := range g.vertices[start] {
+		g.DFS(neighbor, visited)
+	}
+}
 
 func main() {
 	graph := NewGraph()
@@ -33,4 +48,6 @@ func main() {
 	graph.AddEdge("C", "D")
 
 	graph.Print()
+	visited := make(map[string]bool)
+	graph.DFS("A", visited)
 }
