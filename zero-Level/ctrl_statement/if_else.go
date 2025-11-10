@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func ifmain() {
 	fmt.Println("today we are going to see if else statement")
 	var number int
 	fmt.Println("enter your number :")
